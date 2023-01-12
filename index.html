@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <style>
+    .container-fluid1 {
+      background-image:url("img/header.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .content {
+      color: white;
+      text-align: center;
+      padding-top: 125px;
+      padding-bottom: 125px;
+      background: rgba(64, 63, 63, 0.413);
+    }
+
+    .navbar {
+    background: rgba(64, 63, 63, 0.413);
+    
+  }
+    .navbar-collapse {
+      flex-basis: 100%;
+      flex-grow: 1;
+      align-items: center;
+      padding-right: 30px;
+  }
+    .bg-light {
+        --bs-bg-opacity: 0;
+        background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+    }
+    .heading {
+        padding: 10%;
+        color: white;
+        background-image: url("img/Slider_img.jpg"); /* The image used */
+        background-color: #cccccc; /* Used if the image is unavailable */
+        height: 500px; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+    }
+    .heading button {
+        background: white;
+        border: none;
+    }
+
+    .groupcard h3 {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .groupcard h4 {
+
+        display: inline;
+        margin: 10px;
+    }
+    hr {
+        width: 10%;
+    }
+    .card-deck {
+        display: flex;
+        margin: 0 -15px;
+        justify-content:center;
+        }
+
+        .card-deck .card {
+        margin: 10px;
+        }
+        .morecards {
+            text-align: center;
+        }
+        .morecards button{
+            background: rgb(0, 202, 0);
+            width: 30%;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .footer {
+            background: rgb(181, 181, 181);
+            padding: 10%;
+            text-align: center;
+        }
+        .btn1 {
+          border: 1px solid white;
+          border-radius: 4px;
+          max-lines: 10px;
+          margin-right: 10px;
+          color: white;
+
+        }
+        .nav-item {
+          margin-left: 20px;
+          margin-right: 20px;
+          color: white;
+
+        }
+        .navbar-toggler {
+          background: white;
+        }
+
+        .dropup, .dropend, .dropdown, .dropstart, .dropup-center, .dropdown-center {
+            position: relative;
+            display: inline;
+        }
+
+        .dropdown {
+          display: flex;
+          justify-content: center;
+          color: white;
+        }
+
+        .dropdown1 {
+          background: none;
+          color: white;
+          border: none;
+          padding: 8px;
+        }
+
+        form input {
+          background: none;
+          border: 1px solid white;
+          border-radius: 4px;
+          color: white;
+        }
+        button {
+          background: none;
+          color: white;
+          border: 1px solid white;         
+        }
+        .loginbtn {
+          border: none;
+        }
+        .form1 select {
+            word-wrap: normal;
+            height: 40px;
+        }
+        .form1 select {
+          max-width: 100%;
+          width: 12rem;
+          font-size: 14px;
+          padding-left: 5px;
+
+        }
+        .mybtn {
+          display: inline;
+
+        }
+
+        .mybtn{
+          background: rgb(233, 176, 70);
+          border-radius: 4px;
+          padding: 5px;
+          border: none;
+          color: white;
+          height: 40px;
+        }
+
+        .navbar-nav .show > .nav-link, .navbar-nav .nav-link.active {
+          color: rgb(255 255 255 / 90%);
+        }
+        
+        @media (max-width: 367.98px) {
+          .card-deck .card {
+            -ms-flex: 0 0 48.7%;
+            flex: 0 0 48.7%;
+        }
+        .dropdown {
+            display:block;
+            justify-content: center;
+            color: white;
+        }
+        .dropdown1 {
+          width: 100px;
+        }
+        .mybtn {
+            display: block;
+            margin: auto;
+            margin-top: 15px;
+        }
+        form {
+          display: grid;
+        }
+        .form1 {
+          margin-top: 15px;
+          display: block;
+        }
+        }
+        @media (min-width: 300px) and (max-width: 575.98px) {
+          .card-deck .card {
+            -ms-flex: 0 0 48.7%;
+            flex: 0 0 48.7%;
+        }
+        .dropdown {
+            display:block;
+            justify-content: center;
+            color: white;
+        }
+        .dropdown1 {
+          width: 100px;
+        }
+        .mybtn {
+            display: block;
+            margin: auto;
+            margin-top: 15px;
+        }
+        
+        form {
+          display: grid;
+        }
+        .form1 {
+          margin-top: 15px;
+          display: block;
+        }
+        }
+        
+        @media (min-width: 576px) and (max-width: 767.98px) {
+        .card-deck .card {
+            -ms-flex: 0 0 48.7%;
+            flex: 0 0 48.7%;
+        }
+        .dropdown {
+            display:block;
+            justify-content: center;
+            color: white;
+        }
+        .dropdown1 {
+          width: 100px;
+        }
+        .mybtn {
+            display: block;
+            margin: auto;
+            margin-top: 15px;   
+        }
+        form {
+          display: grid;
+        }
+        .form1 {
+          margin-top: 15px;
+          display: block;
+        }
+        }
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+        .card-deck .card {
+            -ms-flex: 0 0 32%;
+            flex: 0 0 32%;
+        }.dropdown {
+            display:block;
+            justify-content: center;
+            color: white;
+        }
+        .dropdown1 {
+          width: 100px;
+        }
+        .mybtn {
+            display: block;
+            margin: auto;
+            margin-top: 15px;   
+        }
+        form {
+          display: grid;
+        }
+        .form1 {
+          margin-top: 15px;
+          display: block;
+        }
+        }
+
+        @media (min-width: 992px)
+        {
+        .card-deck .card {
+            -ms-flex: 0 0 24%;
+            flex: 0 0 24%;
+        }
+        .form1 {
+          margin-top: 15px;
+        }
+        }
+
+  </style>
+</head>
+<body>
+<div class="container-fluid1 shadow">
+  <div class="bgimg">
+    
+  </div>
+  
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand col-sm-3">
+            <img src="img/Group 1.png" height="28" alt="CoolBrand">
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-9 justify-content-end" id="navbarCollapse">
+            <div class="navbar-nav justify-content-center">
+                <a href="#" class="nav-item nav-link active">About</a>
+                <a href="#" class="nav-item nav-link active">Jurnal</a>
+
+                <form action="">
+                  <label for="cars"></label>
+                  <select name="cars" class="dropdown1">
+                    <a href=""><option value="">Action</option></a>
+                    <a href=""><option value="">1</option></a>
+                    <a href=""><option value="">2</option></a>
+                    <a href=""><option value="">3</option></a>
+                  </select>
+                  <a href=""><input type="button" value="List Your Space"></a>
+                  <a href=""><input type="button" value="Join to find a Space"></a>
+                  <a href=""><input type="button" class="loginbtn" value="Login"></a>
+                </form>
+            </div>
+        </div>
+    </div>
+  </nav>
+  <div class="content">
+    <h1>LOCATE CONNECT CREATE</h1>
+    <h2>Choose your next photoshoot location</h2>
+
+    <div class="dropdown">
+      <form action="" class="form1">
+        <label for="cars"></label>
+          <select name="cars" id="cars">
+            <a href=""><option value="volvo">What is your Activity?</option></a>
+            <a href=""><option value="volvo">1</option></a>
+            <a href=""><option value="volvo">2</option></a>
+            <a href=""><option value="volvo">3</option></a>
+          </select>
+    </form>
+
+    <form action="" class="form1">
+      <label for="cars"></label>
+        <select name="cars" id="cars">
+          <a href=""><option value="volvo">Where?</option></a>
+          <a href=""><option value="volvo">1</option></a>
+          <a href=""><option value="volvo">2</option></a>
+          <a href=""><option value="volvo">3</option></a>
+        </select>
+  </form>
+
+    <form action="" class="form1">
+      <label for="cars"></label>
+        <select name="cars" id="cars">
+          <a href=""><option value="volvo">When?</option></a>
+          <a href=""><option value="volvo">1</option></a>
+          <a href=""><option value="volvo">2</option></a>
+          <a href=""><option value="volvo">3</option></a>
+        </select>
+      <input type="button" class="mybtn" value="Show Location">
+    </form>
+    </div>
+    
+
+  </div>
+</div>
+
+
+</body>
+</html>
